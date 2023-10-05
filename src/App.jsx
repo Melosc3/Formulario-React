@@ -1,8 +1,10 @@
 import './App.css';
+import Footer from './components/footer';
 
 function App() {
   return (
     <div className='bg-[#121214] w-full h-88 absolute top-0 left-0'>
+      {/* TODO: componentizar esse header */}
       <header className='w-80 mt-16'>
         <h1 className='mb-6 font-sans font-bold leading-10 text-white text-3xl' >Crie e compartilhe seu evento.</h1>
         <p className='text-xs leading-6 text-cyan-400'>O primeiro passo é, preencher esse formulário de inscrção.</p>
@@ -104,11 +106,7 @@ function App() {
 
       </form>
 
-      <footer>
-        <button type='sumbit'>
-          Slavar evento
-        </button>
-      </footer>
+      <Footer />
 
     </div>
   );
